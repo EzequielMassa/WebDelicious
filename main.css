@@ -1,10 +1,14 @@
 :root {
-	--color-background: #120f0f;
-	--color-primary: #c49b63;
-	--font-color-primary: #f4f4f4;
+	--color-background: #121618;
+	--color-primary: #ffc851;
+	--font-color-primary: #ffffff;
 	--font-color-secondary: #7b7b7b;
 	--font-principal: 'Montserrat', sans-serif;
 	--font-secundaria: 'Nunito Sans', sans-serif;
+	--font-size-title: 4rem;
+	--font-size-subtitle: 2.5rem;
+	--font-size-parrafo: 1.5rem;
+	--font-size-bottom: 1.2rem;
 }
 
 html {
@@ -35,4 +39,8 @@ body {
 
 .navbar__cart__icon {
 	font-size: 1.5rem;
+}
+h1{
+	font-family: var(--font-principal);
+	font-size: var(--font-size-title);
 }
