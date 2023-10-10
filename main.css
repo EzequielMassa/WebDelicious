@@ -13,7 +13,7 @@
 
 html {
 	scroll-behavior: smooth;
-	font-family: var(--font-principal);
+	font-family: 'Montserrat', 'Nunito Sans', sans-serif;
 }
 
 body {
@@ -40,7 +40,8 @@ body {
 .navbar__cart__icon {
 	font-size: 1.5rem;
 }
-h1{
-	font-family: var(--font-principal);
-	font-size: var(--font-size-title);
+
+
+h1 {
+	font-family: var(--font-secundaria);
 }
