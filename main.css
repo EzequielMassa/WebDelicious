@@ -1,0 +1,23 @@
+:root {
+	--color-primary: #ebf2f2;
+	--color-secondary: #d0f2e7;
+	--color-tertiary: #bcebdf;
+	--color-quaternary: #ade0db;
+	--color-quinary: #d9dbdb;
+	--font-principal: 'Montserrat', sans-serif;
+	--font-secundaria: 'Nunito Sans', sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+	font-family: var(--font-principal);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	vertical-align: baseline;
+}
