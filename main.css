@@ -1,9 +1,8 @@
 :root {
-	--color-primary: #ebf2f2;
-	--color-secondary: #d0f2e7;
-	--color-tertiary: #bcebdf;
-	--color-quaternary: #ade0db;
-	--color-quinary: #d9dbdb;
+	--color-background: #120f0f;
+	--color-primary: #c49b63;
+	--font-color-primary: #f4f4f4;
+	--font-color-secondary: #7b7b7b;
 	--font-principal: 'Montserrat', sans-serif;
 	--font-secundaria: 'Nunito Sans', sans-serif;
 }
@@ -11,6 +10,10 @@
 html {
 	scroll-behavior: smooth;
 	font-family: var(--font-principal);
+}
+
+body {
+	background-color: var(--color-background);
 }
 
 * {
