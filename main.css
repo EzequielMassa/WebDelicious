@@ -1,47 +1,54 @@
 :root {
-	--color-background: #121618;
-	--color-primary: #ffc851;
-	--font-color-primary: #ffffff;
-	--font-color-secondary: #7b7b7b;
-	--font-principal: 'Montserrat', sans-serif;
-	--font-secundaria: 'Nunito Sans', sans-serif;
-	--font-size-title: 4rem;
-	--font-size-subtitle: 2.5rem;
-	--font-size-parrafo: 1.5rem;
-	--font-size-bottom: 1.2rem;
+  --color-background: #121618;
+  --color-primary: #ffc851;
+  --font-color-primary: #ffffff;
+  --font-color-secondary: #7b7b7b;
+  --font-principal: "Montserrat", sans-serif;
+  --font-secundaria: "Nunito Sans", sans-serif;
+  --font-size-title: 4rem;
+  --font-size-subtitle: 2.5rem;
+  --font-size-parrafo: 1.5rem;
+  --font-size-bottom: 1.2rem;
 }
 
 html {
-	scroll-behavior: smooth;
-	font-family: 'Montserrat', 'Nunito Sans', sans-serif;
+  scroll-behavior: smooth;
+  font-family: "Montserrat", "Nunito Sans", sans-serif;
 }
 
 body {
-	background-color: var(--color-background);
+  background-color: var(--color-background);
 }
 
 * {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: baseline;
 }
 
 .navbar__logo {
-	width: 6rem;
+  width: 6rem;
 }
 .navbar__search__icon {
-	color: black;
-	font-size: 1.5rem;
+  color: black;
+  font-size: 1.5rem;
 }
 
 .navbar__cart__icon {
-	font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
-
-h1 {
-	font-family: var(--font-secundaria);
+/* INDEX / HOME  STYLE*/
+h1{
+	color: var(--font-color-primary);
+}
+.imgSliderBanner{
+	height: 100vh;
+}
+.card{
+	background-color: var(--color-background);
+	border: var(--color-primary) solid;
 }
