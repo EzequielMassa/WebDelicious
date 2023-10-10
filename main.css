@@ -21,3 +21,15 @@ html {
 	box-sizing: border-box;
 	vertical-align: baseline;
 }
+
+.navbar__logo {
+	width: 6rem;
+}
+.navbar__search__icon {
+	color: black;
+	font-size: 1.5rem;
+}
+
+.navbar__cart__icon {
+	font-size: 1.5rem;
+}
