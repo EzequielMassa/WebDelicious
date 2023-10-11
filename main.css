@@ -36,6 +36,7 @@ header {
 .navbar {
 	background-color: var(--color-background);
 }
+
 .navbar__logo {
 	width: 5rem;
 }
