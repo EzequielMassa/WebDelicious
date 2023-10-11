@@ -1,3 +1,17 @@
+.contact {
+	background-image: linear-gradient(black, black), url('../../assets/img/contact-background.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+	background-blend-mode: saturation;
+}
+
+.contact__container {
+	background-color: var(--color-background);
+	opacity: 0.9;
+}
+
 .contact__title {
 	font-family: var(--font-principal);
 	color: var(--color-primary);
