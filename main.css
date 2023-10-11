@@ -33,7 +33,18 @@ header,
 .navbar {
   background-color: var(--color-background);
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 	{
+  font-family: var(--font-principal);
+  font-weight: 600;
+}
+p {
+  font-family: var(--font-secundaria);
+}
 .navbar__logo {
   width: 5rem;
 }
@@ -154,7 +165,6 @@ header,
   height: 100%;
   object-fit: cover;
 }
-
 
 .btn-slider-review-left {
   left: -50px;
