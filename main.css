@@ -1,54 +1,82 @@
 :root {
-  --color-background: #121618;
-  --color-primary: #ffc851;
-  --font-color-primary: #ffffff;
-  --font-color-secondary: #7b7b7b;
-  --font-principal: "Montserrat", sans-serif;
-  --font-secundaria: "Nunito Sans", sans-serif;
-  --font-size-title: 4rem;
-  --font-size-subtitle: 2.5rem;
-  --font-size-parrafo: 1.5rem;
-  --font-size-bottom: 1.2rem;
+	--color-background: #121618;
+	--color-primary: #ffc851;
+	--font-color-primary: #ffffff;
+	--font-color-secondary: #7b7b7b;
+	--font-principal: 'Montserrat', sans-serif;
+	--font-secundaria: 'Nunito Sans', sans-serif;
+	--font-size-title: 4rem;
+	--font-size-subtitle: 2.5rem;
+	--font-size-parrafo: 1.5rem;
+	--font-size-bottom: 1.2rem;
 }
 
 html {
-  scroll-behavior: smooth;
-  font-family: "Montserrat", "Nunito Sans", sans-serif;
+	scroll-behavior: smooth;
+	font-family: 'Montserrat', 'Nunito Sans', sans-serif;
 }
 
 body {
-  background-color: var(--color-background);
+	background-color: var(--color-background);
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  vertical-align: baseline;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	vertical-align: baseline;
 }
 
-.navbar__logo {
-  width: 6rem;
+header {
+	background-color: var(--color-background);
 }
+
+.navbar {
+	background-color: var(--color-background);
+}
+.navbar__logo {
+	width: 5rem;
+}
+
 .navbar__search__icon {
-  color: black;
-  font-size: 1.5rem;
+	color: var(--font-color-primary);
+	font-size: 1.5rem;
+}
+.navbar__search__icon:hover,
+.nav-link:hover,
+.navbar__cart__icon:hover {
+	color: var(--color-primary);
+	transition: all 0.5s ease;
 }
 
 .navbar__cart__icon {
-  font-size: 1.5rem;
+	color: var(--font-color-primary);
+	font-size: 1.6rem;
+}
+
+.navbar__login__btn {
+	background-color: var(--font-color-primary);
+	color: var(--color-background);
+}
+
+.navbar__login__btn:hover,
+.navbar__login__btn:active {
+	background-color: #ffc851;
+	color: var(--color-background);
+	transform: scaleX(1.1);
+	transition: all 0.5s ease-in-out;
 }
 
 /* INDEX / HOME  STYLE*/
-h1{
+h1 {
 	color: var(--font-color-primary);
 }
-.imgSliderBanner{
+.imgSliderBanner {
 	height: 100vh;
 }
-.card{
+.card {
 	background-color: var(--color-background);
 	border: var(--color-primary) solid;
 }
