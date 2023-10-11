@@ -48,6 +48,24 @@ header,
 	color: var(--font-color-primary);
 	font-size: 1.5rem;
 }
+
+.navbar__cart__item {
+	position: relative;
+}
+
+.navbar__cart__icon::after {
+	content: '2';
+	font-size: 0.8rem;
+	font-weight: 700;
+	color: var(--color-background);
+	position: absolute;
+	top: 0rem;
+	padding-left: 0.4rem;
+	padding-right: 0.4rem;
+	border-radius: 100%;
+	background-color: var(--color-primary);
+}
+
 .navbar__search__icon:hover,
 .nav-link:hover,
 .navbar__cart__icon:hover {
