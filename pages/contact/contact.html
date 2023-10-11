@@ -32,7 +32,7 @@
 	</head>
 	<body>
 		<!-- navbar -->
-		<header class="container-fluid fixed-top">
+		<header class="container-fluid sticky-top">
 			<div class="container-md">
 				<div class="row">
 					<div class="col">
@@ -111,17 +111,94 @@
 		</header>
 		<!-- main -->
 		<main class="container-fluid">
-			<section id="contacto" class="container-md vh-100 d-grid align-items-center justify-content-center bg-danger">
+			<section id="contacto" class="container-md align-items-center justify-content-center">
 				<article class="row">
 					<div class="col-12">
-						<h1 class="text-center">Contacto</h1>
-						<h3 class="text-center">Envianos tu Consulta</h3>
+						<h1 class="text-center contact__title">Contactanos</h1>
+						<h3 class="text-center contact__subtitle">Envianos tu Consulta</h3>
 					</div>
-					<div class="row">
+					<form class="row needs-validation mt-2 g-4">
 						<div class="col-12 col-lg-6">
-
-						</divc>
-					</div>
+							<label for="validationName" class="form-label">Nombre</label>
+							<input
+								type="text"
+								class="form-control bg-transparent text-light"
+								id="validationName"
+								value=""
+								minlength="3"
+								maxlength="20"
+								pattern="[A-Za-z\s]+"
+								title="Solo se permiten letras y espacios."
+								required
+							/>
+						</div>
+						<div class="col-12 col-lg-6">
+							<label for="validationLastName" class="form-label">Apellido</label>
+							<input
+								type="text"
+								class="form-control bg-transparent text-light"
+								id="validationLastName"
+								value=""
+								minlength="3"
+								maxlength="20"
+								pattern="[A-Za-z\s]+"
+								title="Solo se permiten letras y espacios."
+								required
+							/>
+							<div class="valid-feedback">Looks good!</div>
+						</div>
+						<div class="col-12 col-lg-6">
+							<label for="validationEmail" class="form-label">Correo</label>
+							<div class="input-group has-validation">
+								<span class="input-group-text" id="inputGroupPrepend"><i class="bi bi-envelope"></i></span>
+								<input
+									type="email"
+									class="form-control bg-transparent text-light"
+									id="validationEmail"
+									aria-describedby="inputGroupPrepend"
+									minlength="3"
+									maxlength="100"
+									required
+									pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+									title="Ingresa una dirección de correo electrónico válida."
+								/>
+							</div>
+						</div>
+						<div class="col-12 col-lg-6">
+							<label for="validationPhone" class="form-label">Telefono</label>
+							<div class="input-group has-validation">
+								<span class="input-group-text" id="inputGroupPrepend"><i class="bi bi-telephone"></i></span>
+								<input
+									type="tel"
+									class="form-control bg-transparent text-light"
+									id="validationPhone"
+									aria-describedby="inputGroupPrepend"
+									name="telefono"
+									minlength="8"
+									maxlength="20"
+									pattern="[0-9]*"
+									title="Ingrese solo números."
+									required
+								/>
+							</div>
+						</div>
+						<div class="col-12 form-floating mt-4">
+							<textarea
+								class="form-control bg-transparent text-light"
+								placeholder="Leave a comment here"
+								id="validationMessage"
+								style="height: 150px"
+								required
+								minlength="5"
+								maxlength="300"
+							></textarea>
+							<label for="validationMessage" class="contact__textarea__mensaje">Mensaje</label>
+							<div class="valid-feedback">Looks good!</div>
+						</div>
+						<div class="col-12 my-4 d-flex align-self-center justify-content-center">
+							<button class="btn contact__form__btnSubmit w-50" type="submit">Submit form</button>
+						</div>
+					</form>
 				</article>
 			</section>
 		</main>
