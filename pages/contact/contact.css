@@ -35,6 +35,10 @@ form div .form-control {
 	transition: all 0.5s ease-in-out;
 }
 
+.contact__sucursales {
+	background-color: var(--color-primary);
+}
+
 @media screen and (min-width: 768px) {
 	.contact__title {
 		font-size: var(--font-size-title);
