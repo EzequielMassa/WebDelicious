@@ -147,9 +147,9 @@
                     class="navbar-nav d-flex align-items-center column-gap-lg-4 row-gap-4 p-4 p-lg-0"
                   >
                     <li class="nav-item navbar__cart__item">
-                      <a class="nav-link" href="">
-                        <i class="bi bi-cart navbar__cart__icon"></i
-                      ></a>
+               						<a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+												<i class="bi bi-cart d-md-block navbar__cart__icon"></i
+											></a>
                     </li>
                     <li class="nav-item align-self-center">
                       <a
@@ -166,6 +166,78 @@
         </div>
       </div>
     </header>
+				<!-- Modal -->
+		<div
+			class="modal px-0 mx-0 fade"
+			id="exampleModal"
+			tabindex="-1"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+			data-bs-backdrop="static"
+			data-bs-keyboard="false"
+		>
+			<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h1 class="modal-title fs-5" id="exampleModalLabel"><i class="bi bi-basket2"></i> Carrito</h1>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<ul class="list-group row">
+							<li class="list-group-item col-12 list-group-item-dark">
+								<div class="row">
+									<div class="col-4">
+										<img
+											class="img-fluid modal__cart__image"
+											src="../../../assets/img/pizza-calabresa.png"
+											alt="imagen de pizza calabresa"
+										/>
+									</div>
+									<div class="col-6 d-flex flex-column align-items-center justify-content-center">
+										<h5 class="text-center">Pizza Calabresa</h5>
+										<p>1 x $1500.00</p>
+									</div>
+									<div class="col-2 d-flex flex-column align-items-center justify-content-center fs-2 text-danger">
+										<button class="btn fs-2 text-danger">
+											<i class="bi bi-x-circle"></i>
+										</button>
+									</div>
+								</div>
+							</li>
+							<li class="list-group-item col-12 list-group-item-dark">
+								<div class="row">
+									<div class="col-4">
+										<img
+											class="img-fluid modal__cart__image"
+											src="../../../assets/img/hamburguesa-completa.png"
+											alt="imagen de hamburguesa completa"
+										/>
+									</div>
+									<div class="col-6 d-flex flex-column align-items-center justify-content-center">
+										<h5 class="text-center">Hamburguesa Completa</h5>
+										<p>1 x $3200.00</p>
+									</div>
+									<div class="col-2 d-flex flex-column align-items-center justify-content-center fs-2 text-danger">
+										<button class="btn fs-2 text-danger">
+											<i class="bi bi-x-circle"></i>
+										</button>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<div class="row pt-3">
+							<div class="col-12 d-flex justify-content-evenly align-items-center text-center">
+								<h5 class="fs-4 text-uppercase text-success">Total:</h5>
+								<h6 class="fs-4 text-uppercase">$4700.00</h6>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer d-flex justify-content-center flex-column">
+						<a class="btn btn-dark" href="../../carritoDetalle/carritoDetalle.html" role="button">Ver Carrito</a>
+					</div>
+				</div>
+			</div>
+		</div>
     <!-- main -->
     <main>
       <section >
