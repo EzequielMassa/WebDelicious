@@ -93,15 +93,15 @@
 											<a class="nav-link" href="./pages/contact/contact.html">Contacto</a>
 										</li>
 									</ul>
-									<div class="d-flex me-2"">
+									<form class="d-flex me-2" role="search">
 										<input class="form-control" type="search" placeholder="Buscar" aria-label="Search" id="searchBtn" />
-										<a class="btn" href="./pages/error/error.html">
+										<button class="btn" type="submit">
 											<i class="bi bi-search navbar__search__icon"></i>
-										</a>
-									</div>
+										</button>
+									</form>
 									<ul class="navbar-nav d-flex align-items-center column-gap-lg-4 row-gap-4 p-4 p-lg-0">
 										<li class="nav-item navbar__cart__item">
-											<a class="nav-link"  data-bs-toggle="modal" data-bs-target="#exampleModal"> <i class="bi bi-cart d-md-block navbar__cart__icon"></i></a>
+											<a class="nav-link" href=""> <i class="bi bi-cart d-md-block navbar__cart__icon"></i></a>
 										</li>
 										<li class="nav-item align-self-center">
 											<a class="btn navbar__login__btn" href="./pages/login/login.html">Login</a>
@@ -114,67 +114,6 @@
 				</div>
 			</div>
 		</header>
-		<!-- Modal -->
-<div class="modal px-0 mx-0  fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false" >
-  <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel"> <i class="bi bi-basket2"></i> Carrito</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-      <ul class="list-group row">
-  <li class="list-group-item col-12 list-group-item-dark">
-		<div class="row">
-			<div class="col-4">
-				<img class="img-fluid modal__cart__image" src="./assets/img/pizza-calabresa.png" alt="">
-			</div>
-			<div class="col-6 d-flex flex-column align-items-center justify-content-center ">
-				<h5 class="text-center">Pizza Calabresa</h5>
-				<p>1 x $1500.00</p>
-
-			 </div>
-			<div class="col-2  d-flex flex-column align-items-center justify-content-center fs-2 text-danger ">
-				<button class="btn fs-2  text-danger ">
-									<i class="bi bi-x-circle"></i>
-				</button>
-
-			</div>
-		</div>
-
-	</li>
-  <li class="list-group-item col-12 list-group-item-dark">
-		<div class="row">
-			<div class="col-4">
-				<img class="img-fluid modal__cart__image" src="./assets/img/hamburguesa-completa.png" alt="">
-			</div>
-			<div class="col-6 d-flex flex-column align-items-center justify-content-center ">
-				<h5 class="text-center ">Hamburguesa Completa</h5>
-				<p>1 x $3200.00</p>
-
-			 </div>
-			<div class="col-2  d-flex flex-column align-items-center justify-content-center fs-2 text-danger ">
-				<button class="btn fs-2  text-danger ">
-									<i class="bi bi-x-circle"></i>
-				</button>
-
-			</div>
-		</div>
-	</li>
-      </ul>
-				<div class="row pt-3">
-			<div class="col-12 d-flex justify-content-evenly   align-items-center text-center">
-				<h5 class="fs-4 text-uppercase text-success   ">Total:</h5>
-				<h6 class="fs-4 text-uppercase ">$4700.00</h6>
-			</div>
-		</div>
-      </div>
-      <div class="modal-footer d-flex justify-content-center flex-column">
-     <a class="btn btn-success " href="./pages/carritoDetalle/carritoDetalle.html" role="button">Comprar</a>
-      </div>
-    </div>
-  </div>
-</div>
 		<!-- main -->
 		<main>
 			<section id="hero">
@@ -479,15 +418,14 @@
 			</section>
 			<h2 class="text-center text-light">Sus Comentarios Nos Importan!!</h2>
 			<section class="container d-flex justify-content-center mt-5">
-				<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+				<div id="carouselExampleInterval" style="width: 20rem" class="carousel slide" data-bs-ride="carousel">
 					<div class="carousel-inner">
 						<div class="carousel-item active" data-bs-interval="1000">
-							<div class="card gradiendCardReview p-3" style="width: 20rem">
+							<div class="card gradiendCardReview cardReview">
 								<img
 									src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
 									class="card-img-top rounded-circle"
 									alt="imagenReview1"
-									style="height: 400px"
 								/>
 								<div class="card-body">
 									<h4 class="text-center text-light">Jorge Luis</h4>
@@ -498,13 +436,12 @@
 								</div>
 							</div>
 						</div>
-						<div class="carousel-item" data-bs-interval="4500">
-							<div class="card gradiendCardReview p-3" style="width: 20rem">
+						<div class="carousel-item" data-bs-interval="2500">
+							<div class="card gradiendCardReview cardReview">
 								<img
 									src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1600"
 									class="card-img-top rounded-circle"
 									alt="imagenReview2"
-									style="height: 400px"
 								/>
 								<div class="card-body">
 									<h4 class="text-center text-light">Elena</h4>
@@ -515,13 +452,12 @@
 								</div>
 							</div>
 						</div>
-						<div class="carousel-item" data-bs-interval="4500">
-							<div class="card gradiendCardReview p-3" style="width: 20rem">
+						<div class="carousel-item" data-bs-interval="2500">
+							<div class="card gradiendCardReview cardReview">
 								<img
 									src="https://images.pexels.com/photos/39819/woman-girl-eye-models-39819.jpeg?auto=compress&cs=tinysrgb&w=1600"
 									class="card-img-top rounded-circle"
 									alt="imagenReview3"
-									style="height: 400px"
 								/>
 								<div class="card-body">
 									<h4 class="text-center text-light">Andi</h4>
@@ -533,24 +469,6 @@
 							</div>
 						</div>
 					</div>
-					<button
-						class="carousel-control-prev btn-slider-review-left"
-						type="button"
-						data-bs-target="#carouselExampleInterval"
-						data-bs-slide="prev"
-					>
-						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						<span class="visually-hidden">Previous</span>
-					</button>
-					<button
-						class="carousel-control-next start-100"
-						type="button"
-						data-bs-target="#carouselExampleInterval"
-						data-bs-slide="next"
-					>
-						<span class="carousel-control-next-icon" aria-hidden="true"></span>
-						<span class="visually-hidden">Next</span>
-					</button>
 				</div>
 			</section>
 		</main>

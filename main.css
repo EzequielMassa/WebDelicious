@@ -177,3 +177,27 @@ p {
 	background: rgb(18, 22, 24);
 	background: linear-gradient(0deg, rgba(18, 22, 24, 1) 0%, rgba(255, 200, 81, 0.48503151260504207) 100%);
 }
+.gradiendCardReview img{
+	height: 400px;
+}
+.cardReview{
+    width: 18rem;
+    padding: .5rem 1rem;
+}
+.cardReview img{
+  border-radius: 50%;
+  height: 300px;
+}
+@media screen and (max-width: 768px) {
+	.gradiendCardReview img{
+		height: 200px;
+	}
+  .cardReview{
+    width: 15rem;
+    padding: .1rem .1rem;
+    
+  }
+  .cardReview im{
+    height: 200px;
+  }
+}
