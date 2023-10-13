@@ -96,7 +96,9 @@
 									</form>
 									<ul class="navbar-nav d-flex align-items-center column-gap-lg-4 row-gap-4 p-4 p-lg-0">
 										<li class="nav-item navbar__cart__item">
-											<a class="nav-link" href=""> <i class="bi bi-cart navbar__cart__icon"></i></a>
+											<a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+												<i class="bi bi-cart d-md-block navbar__cart__icon"></i
+											></a>
 										</li>
 										<li class="nav-item align-self-center">
 											<a class="btn navbar__login__btn" href="../login/login.html">Login</a>
@@ -109,8 +111,80 @@
 				</div>
 			</div>
 		</header>
+		<!-- Modal -->
+		<div
+			class="modal px-0 mx-0 fade"
+			id="exampleModal"
+			tabindex="-1"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+			data-bs-backdrop="static"
+			data-bs-keyboard="false"
+		>
+			<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h1 class="modal-title fs-5" id="exampleModalLabel"><i class="bi bi-basket2"></i> Carrito</h1>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<ul class="list-group row">
+							<li class="list-group-item col-12 list-group-item-dark">
+								<div class="row">
+									<div class="col-4">
+										<img
+											class="img-fluid modal__cart__image"
+											src="../../assets/img/pizza-calabresa.png"
+											alt="imagen de pizza calabresa"
+										/>
+									</div>
+									<div class="col-6 d-flex flex-column align-items-center justify-content-center">
+										<h5 class="text-center">Pizza Calabresa</h5>
+										<p>1 x $1500.00</p>
+									</div>
+									<div class="col-2 d-flex flex-column align-items-center justify-content-center fs-2 text-danger">
+										<button class="btn fs-2 text-danger">
+											<i class="bi bi-x-circle"></i>
+										</button>
+									</div>
+								</div>
+							</li>
+							<li class="list-group-item col-12 list-group-item-dark">
+								<div class="row">
+									<div class="col-4">
+										<img
+											class="img-fluid modal__cart__image"
+											src="../../assets/img/hamburguesa-completa.png"
+											alt="imagen de hamburguesa completa"
+										/>
+									</div>
+									<div class="col-6 d-flex flex-column align-items-center justify-content-center">
+										<h5 class="text-center">Hamburguesa Completa</h5>
+										<p>1 x $3200.00</p>
+									</div>
+									<div class="col-2 d-flex flex-column align-items-center justify-content-center fs-2 text-danger">
+										<button class="btn fs-2 text-danger">
+											<i class="bi bi-x-circle"></i>
+										</button>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<div class="row pt-3">
+							<div class="col-12 d-flex justify-content-evenly align-items-center text-center">
+								<h5 class="fs-4 text-uppercase text-success">Total:</h5>
+								<h6 class="fs-4 text-uppercase">$4700.00</h6>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer d-flex justify-content-center flex-column">
+						<a class="btn btn-success" href="#" role="button">Comprar</a>
+					</div>
+				</div>
+			</div>
+		</div>
 		<!-- main -->
-		<main class="container-fluid contact">
+		<main class="container-fluid contact pt-4">
 			<section id="contacto" class="container-md align-items-center justify-content-center">
 				<article class="row contact__container">
 					<div class="col-12">
@@ -145,7 +219,6 @@
 								title="Solo se permiten letras y espacios."
 								required
 							/>
-							<div class="valid-feedback">Looks good!</div>
 						</div>
 						<div class="col-12 col-lg-6">
 							<label for="validationEmail" class="form-label">Correo</label>
@@ -196,21 +269,21 @@
 							<div class="valid-feedback">Looks good!</div>
 						</div>
 						<div class="col-12 my-4 d-flex align-self-center justify-content-center">
-							<button class="btn contact__form__btnSubmit w-50" type="submit">Submit form</button>
+							<button class="btn contact__form__btnSubmit w-50" type="submit">Enviar</button>
 						</div>
 					</form>
 				</article>
 				<article class="row mt-5">
 					<div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center contact__sucursales">
 						<h2 class="text-center">Conoce nuestras sucursales</h2>
-						<p>Junín 1301</p>
+						<p>Av. Mate de Luna 3000</p>
 						<p>San Miguel de Tucumán, Tucumán</p>
 					</div>
-					<div class="col-12 col-md-8 mt-4 mt-md-0">
+					<div class="col-12 col-md-8 mt-4 mt-md-0 ps-md-0">
 						<iframe
-							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14243.551304862356!2d-65.22335839581503!3d-26.811700152256684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c3a92f6aa99%3A0xe427b034bf04ec9a!2sJun%C3%ADn%201301-1399%2C%20T4001KAI%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1697056776346!5m2!1ses-419!2sar"
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.533422529529!2d-65.24446662598712!3d-26.822981189457884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225cf682ae6ae9%3A0xff5229086a74d6e4!2sAv.%20Mate%20de%20Luna%203000-2902%2C%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1697117481145!5m2!1ses-419!2sar"
 							width="100%"
-							height="250"
+							height="100%"
 							style="border: 0"
 							allowfullscreen=""
 							loading="lazy"

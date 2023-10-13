@@ -1,5 +1,5 @@
 .contact {
-	background-image: linear-gradient(black, black), url('../../assets/img/contact-background.jpg');
+	background-image: linear-gradient(black, black), url('../../assets/img/contact-background.webp');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: fixed;
@@ -51,6 +51,11 @@ form div .form-control {
 
 .contact__sucursales {
 	background-color: var(--color-primary);
+	opacity: 0.9;
+}
+
+.contact__sucursales p {
+	font-family: var(--font-secundaria);
 }
 
 @media screen and (min-width: 768px) {
@@ -59,5 +64,10 @@ form div .form-control {
 	}
 	.contact__subtitle {
 		font-size: var(--font-size-subtitle);
+	}
+
+	.form-label,
+	.contact__textarea__mensaje {
+		font-size: 1.2rem;
 	}
 }

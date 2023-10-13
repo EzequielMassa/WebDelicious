@@ -1,0 +1,57 @@
+body {
+	background-image: url('../../assets/img/error-page.webp');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.error__img {
+	width: 12rem;
+	filter: drop-shadow(0 0 0.3rem black);
+}
+
+.error__code {
+	font-family: var(--font-principal);
+	font-size: 6rem;
+	font-weight: bold;
+	letter-spacing: 0.4rem;
+	filter: drop-shadow(0 0 0.3rem var(--color-primary));
+	animation: errorAnimation 1s infinite;
+}
+
+.error__text {
+	font-family: var(--font-secundaria);
+	font-size: 3rem;
+	text-align: center;
+	color: var(--font-color-primary);
+	opacity: 0.8;
+	text-shadow: 0 0 0.8rem black;
+	font-weight: 700;
+}
+
+@keyframes errorAnimation {
+	0% {
+		transform: translateY(10px);
+	}
+	50% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(10px);
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.error__img {
+		width: 8rem;
+		filter: drop-shadow(0 0 0.3rem black);
+	}
+
+	.error__code {
+		font-size: 4rem;
+	}
+	.error__text {
+		font-size: 2rem;
+	}
+}
