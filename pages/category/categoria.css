@@ -192,9 +192,7 @@
 }
 .hoverCard:hover {
   border-radius: 8px;
-  box-shadow:  7px 7px 14px #e0b047,
-               -7px -7px 14px #ffe05b;
-             
+  box-shadow: 7px 7px 14px #e0b047, -7px -7px 14px #ffe05b;
 }
 
 .hoverCard:hover img {
