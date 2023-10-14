@@ -32,7 +32,7 @@
 	</head>
 	<body>
 		<!-- navbar -->
-		<header class="container-fluid fixed-top">
+		<header class="container-fluid sticky-top">
 			<div class="container-md">
 				<div class="row">
 					<div class="col">
@@ -90,13 +90,15 @@
 									</ul>
 									<form class="d-flex me-2" role="search">
 										<input class="form-control" type="search" placeholder="Buscar" aria-label="Search" id="searchBtn" />
-										<button class="btn" type="submit">
+										<a href="../../error/error.html" class="btn">
 											<i class="bi bi-search navbar__search__icon"></i>
-										</button>
+										</a>
 									</form>
 									<ul class="navbar-nav d-flex align-items-center column-gap-lg-4 row-gap-4 p-4 p-lg-0">
 										<li class="nav-item navbar__cart__item">
-											<a class="nav-link" href=""> <i class="bi bi-cart navbar__cart__icon"></i></a>
+											<a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+												<i class="bi bi-cart d-md-block navbar__cart__icon"></i
+											></a>
 										</li>
 										<li class="nav-item align-self-center">
 											<a class="btn navbar__login__btn" href="../../login/login.html">Login</a>
