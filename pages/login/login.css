@@ -38,7 +38,7 @@ html {
 	width: 6rem;
 }
 .navbar__search__icon {
-	color: black;
+	color: rgb(255, 255, 255);
 	font-size: 1.5rem;
 }
 
@@ -59,4 +59,11 @@ html {
 	height: 50px;
 	text-align: center;
 
+}
+.navbar__search__icon:hover,
+.nav-link:hover,
+.navbar__cart__icon:hover {
+  color: var(--color-primary);
+  transition: all 0.5s ease;
+  cursor: pointer;
 }

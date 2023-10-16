@@ -32,7 +32,7 @@
 	</head>
 	<body>
 		<!-- navbar -->
-		<header class="container-fluid fixed-top">
+		<header class="container-fluid sticky-top">
 			<div class="container-md">
 				<div class="row">
 					<div class="col">
@@ -126,26 +126,14 @@
 						<label class="fs-4 text-white " for="">telefono</label>
 						<input class="form-control me-3 text-center" type="tel" placeholder="Ingrese su número de telefono" maxlength="10" title="Es obligatorio que ingreses tu numero de telefono" required>
 						<label class="fs-4 text-white " for="Usuario">Email</label>
-						<input class="form-control me-3 text-center" type="email" placeholder="Ingrese su email" minlength="2" title="Es obligatorio que ingreses tu email" required>
+						<input class="form-control me-3 text-center" type="email" placeholder="Ingrese su email" minlength="7" title="Es obligatorio que ingreses tu email" required>
 						<label class="fs-4 text-white " for="Usuario">Contraseña</label>
 						<input class="form-control me-3 text-center" type="password" placeholder="Ingresa tu nueva contraseña" minlength="2" title="Es obligario que ingreses tu nueva contraseña" required>
-						
-						<label class="fs-2 mb-1 mt-3 text-white text-center" for="Genero">Genero</label>
-						<br>
-						
-						<input class="radio__Reg" type="radio" name="genero" id="">
-						<label class="fs-3  m-3 text-white" for="">Masculino</label>
-						<input class="radio__Reg"  type="radio" name="genero" id="">
-						<label class="fs-3  m-3 text-white" for="">Femenino</label>
-						<input class="radio__Reg"  type="radio" name="genero" id="">
-						<label class="fs-3  m-3 text-white" for="">Binario</label>
-						<input class="radio__Reg"  type="radio" name="genero" id="">
-						<label class="fs-3 m-3  text-white" for="">Prefiero No Especificar</label>
-                	<br>
+					
 				
 					<label class="fs-2  text-white text-center" for="">Provincia</label>
 					
-					<select class="mb-5 form-control me-3" id="provincia" required>
+					<select class="mb-5 form-control me-3 text-center" id="provincia" required>
                         <option value="0">Seleccione una provincia</option>
                     </select>
 					 </fieldset>
