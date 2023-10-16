@@ -1,0 +1,34 @@
+.product__container {
+	background-color: var(--color-background);
+	opacity: 0.9;
+}
+
+.product__title {
+	font-family: var(--font-principal);
+	color: var(--color-primary);
+	font-size: 2.5rem;
+	font-weight: 700;
+}
+
+.product__subtitle {
+	color: var(--color-primary);
+	font-size: 1rem;
+	font-weight: 300;
+}
+
+.card-body p {
+	font-family: var(--font-principal);
+	color: var(--font-color-primary);
+}
+
+.card-body li {
+	font-size: small;
+}
+
+.list-group-item:hover {
+	transform: scale(1.2);
+	transition: 0.5s;
+	
+}
+
+
