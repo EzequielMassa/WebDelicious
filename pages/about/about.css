@@ -5,6 +5,29 @@ body {
 	background-blend-mode: color-burn;
 }
 
+.nosotros__title {
+	font-family: var(--font-principal);
+	color: var(--font-principal);
+	font-size: var(--font-size-title);
+	font-size: 2rem;
+}
+
+.nosotros__text {
+	font-family: var(--font-secundaria);
+	font-size: var(--font-size-parrafo);
+	color: var(--font-color-secondary);
+}
+
+.nosotros__text--bg,
+.card {
+	background: rgba(57, 57, 57, 0.2);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	border: 1px solid rgba(54, 54, 54, 0.3);
+}
+
 .nosotros__card__image__container {
 	width: 8rem;
 	height: 8rem;
@@ -30,26 +53,13 @@ body {
 }
 
 .nosotros__card__item:hover .card {
-	border-color: var(--font-color-secondary);
+	border-color: var(--color-primary);
 	transform: scale(1.05);
 	transition: all 0.5s ease-in-out;
 }
 
 .card img {
 	filter: grayscale(100%);
-}
-
-.nosotros__title {
-	font-family: var(--font-principal);
-	color: var(--font-principal);
-	font-size: var(--font-size-title);
-	font-size: 2rem;
-}
-
-.nosotros__text {
-	font-family: var(--font-secundaria);
-	font-size: var(--font-size-parrafo);
-	color: var(--font-color-secondary);
 }
 
 .card-title {
