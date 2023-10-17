@@ -34,7 +34,7 @@ html {
 }
 
 .navbar__logo {
-	width: 6rem;
+	width: 5rem;
 }
 .navbar__search__icon {
 	color: rgb(255, 255, 255);
@@ -60,6 +60,12 @@ html {
 }
 .btn__Reg
 {
-	background: var(--color-primary);
+	background: var(--font-color-primary);
 	border-color: var(--color-background);
+}
+.btn__Reg:hover,
+.btn__Reg:active {
+	background-color: var(--color-primary);
+	color: var(--color-background);
+	transition: all 0.5s ease-in-out;
 }

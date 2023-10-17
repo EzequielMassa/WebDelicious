@@ -35,7 +35,7 @@ html {
 }
 
 .navbar__logo {
-	width: 6rem;
+	width: 5rem;
 }
 .navbar__search__icon {
 	color: rgb(255, 255, 255);
@@ -47,7 +47,7 @@ html {
 }
 
 .bg{
-    background-image: url(/assets/img/usuarios.png);
+    background-image: url(../../assets/img/login-chef.png);
     background-position: center center;
 	background-color: var(--color-background);
     background-repeat: no-repeat;
