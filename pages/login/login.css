@@ -60,6 +60,9 @@ html {
 	text-align: center;
 
 }
+.btn__InicioSesion:hover{
+	background: var(--font-color-secondary);
+}
 .navbar__search__icon:hover,
 .nav-link:hover,
 .navbar__cart__icon:hover {
