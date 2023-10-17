@@ -50,11 +50,15 @@ form div .form-control {
 }
 
 .contact__sucursales {
+	height: 20rem;
+}
+
+.contact__sucursales__text {
 	background-color: var(--color-primary);
 	opacity: 0.9;
 }
 
-.contact__sucursales p {
+.contact__sucursales__text p {
 	font-family: var(--font-secundaria);
 }
 
