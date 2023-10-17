@@ -101,6 +101,7 @@ p {
 
 .modal__cart__image {
 	max-width: 80%;
+	min-width: 3.5rem;
 }
 
 /* INDEX / HOME  STYLE*/
