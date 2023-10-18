@@ -73,3 +73,19 @@ html {
 	padding-top: 0.15rem;
 	padding-bottom: 0.15rem;
 }
+/*
+input:invalid{
+	background-color: rgb(219, 101, 101);
+	}
+	input:valid{
+	background-color: var(--color-primary);
+	}
+	*/
+	.registrate_login{
+		color: var(--color-primary);
+		font-size: 17px;
+	}
+	.recuperaContraseña_login{
+		color: var(--color-primary);
+		font-size: 17px;
+	}
