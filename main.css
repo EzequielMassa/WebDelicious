@@ -224,14 +224,12 @@ p {
 }
 
 .categorias__title {
-	font-family: var(--font-principal);
-	font-size: var(--font-size-subtitle);
 	color: var(--font-color-primary);
 }
 
 .categoria__title {
 	font-family: var(--font-secundaria);
-	font-size: 2rem;
+
 	color: var(--font-color-secondary);
 }
 
@@ -245,6 +243,8 @@ p {
 .categoria__btn {
 	width: 100%;
 	display: none;
+	font-family: var(--font-principal);
+	font-weight: 700;
 }
 
 .categoria__container:hover .categoria__btn {
@@ -254,7 +254,7 @@ p {
 }
 
 .categoria__container:hover img {
-	height: 25rem;
+	height: 15rem;
 	filter: grayscale(100%);
 	transition: all 1s ease-in-out;
 }
