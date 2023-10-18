@@ -107,8 +107,11 @@ p {
 /* INDEX / HOME  STYLE*/
 
 .imgSliderBanner {
-	height: 100vh;
+	height: 50vh;
+	object-fit: cover;
+	object-position: 50% 100%;
 }
+
 .card {
 	background-color: var(--color-background);
 	border: var(--color-primary) solid;
@@ -129,6 +132,9 @@ p {
 @media all and (min-width: 768px) {
 	.grid-gallery {
 		grid-template-columns: repeat(3, 1fr);
+	}
+	.imgSliderBanner {
+		height: 100vh;
 	}
 }
 
