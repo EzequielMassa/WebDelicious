@@ -15,14 +15,14 @@
 .contact__title {
 	font-family: var(--font-principal);
 	color: var(--color-primary);
-	font-size: 2.5rem;
+	font-size: 1.5rem;
 	font-weight: 700;
 }
 
 .contact__subtitle {
 	font-family: var(--font-principal);
 	color: var(--font-color-secondary);
-	font-size: 2rem;
+	font-size: 1rem;
 	font-weight: 300;
 }
 
