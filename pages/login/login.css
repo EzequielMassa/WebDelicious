@@ -10,15 +10,15 @@
 	--font-size-parrafo: 1.5rem;
 	--font-size-bottom: 1.2rem;
 }
-#login{
-background-color: var(--color-primary);
+#login {
+	background-color: var(--color-primary);
 }
-#inicioS{
-   background-color: var(--color-background);
- border:#ffc851;
+#inicioS {
+	background-color: var(--color-background);
+	border: #ffc851;
 }
-body{
-  background-color: var(--color-background);
+body {
+	background-color: var(--color-background);
 }
 html {
 	scroll-behavior: smooth;
@@ -46,27 +46,30 @@ html {
 	font-size: 1.5rem;
 }
 
-.bg{
-    background-image: url(../../assets/img/login-chef.png);
-    background-position: center center;
+.bg {
+	background-image: url(../../assets/img/login-chef.png);
+	background-position: center center;
 	background-color: var(--color-background);
-    background-repeat: no-repeat;
-	
+	background-repeat: no-repeat;
 }
-.btn__InicioSesion{
+.btn__InicioSesion {
 	background: var(--color-primary);
 	width: 150px;
 	height: 50px;
 	text-align: center;
-
 }
-.btn__InicioSesion:hover{
+.btn__InicioSesion:hover {
 	background: var(--font-color-secondary);
 }
 .navbar__search__icon:hover,
 .nav-link:hover,
 .navbar__cart__icon:hover {
-  color: var(--color-primary);
-  transition: all 0.5s ease;
-  cursor: pointer;
+	color: var(--color-primary);
+	transition: all 0.5s ease;
+	cursor: pointer;
+}
+
+.login__form__btn--gmail {
+	padding-top: 0.15rem;
+	padding-bottom: 0.15rem;
 }
