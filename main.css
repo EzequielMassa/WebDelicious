@@ -105,7 +105,7 @@ p {
 }
 
 .imgSliderBanner {
-	height: 50vh;
+	height: 70vh;
 	object-fit: cover;
 	object-position: 50% 100%;
 }
@@ -207,7 +207,8 @@ p {
 	transition: 2s;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
+	
 	.gradiendCardReview img {
 		height: 200px;
 	}
