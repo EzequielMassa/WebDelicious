@@ -30,10 +30,6 @@ body {
 	vertical-align: baseline;
 }
 
-header,
-.navbar {
-	background-color: var(--color-background);
-}
 h1,
 h2,
 h3,
@@ -46,8 +42,18 @@ h6 {
 p {
 	font-family: var(--font-secundaria);
 }
+
+header,
+.navbar {
+	background-color: var(--color-background);
+}
+
 .navbar__logo {
 	width: 5rem;
+}
+
+.nav-link--text {
+	color: var(--font-color-primary);
 }
 
 .form-control:focus {
@@ -208,7 +214,6 @@ p {
 }
 
 @media screen and (max-width: 767px) {
-	
 	.gradiendCardReview img {
 		height: 200px;
 	}

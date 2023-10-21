@@ -54,12 +54,12 @@
 								<div class="collapse navbar-collapse" id="navbarSupportedContent">
 									<ul class="navbar-nav me-lg-auto mb-2 mb-lg-0 align-items-center">
 										<li class="nav-item">
-											<a class="nav-link" aria-current="page" href="../../../index.html">Home</a>
+											<a class="nav-link nav-link--text" aria-current="page" href="../../../index.html">Home</a>
 										</li>
 
 										<li class="nav-item dropdown">
 											<a
-												class="nav-link dropdown-toggle"
+												class="nav-link dropdown-toggle nav-link--text"
 												href="#"
 												role="button"
 												data-bs-toggle="dropdown"
@@ -69,22 +69,24 @@
 											</a>
 											<ul class="dropdown-menu">
 												<li>
-													<a class="dropdown-item" href="../hamburguesas/hamburguesas.html">Hamburguesas</a>
+													<a class="dropdown-item nav-link--text" href="../hamburguesas/hamburguesas.html"
+														>Hamburguesas</a
+													>
 												</li>
 												<li><hr class="dropdown-divider" /></li>
-												<li><a class="dropdown-item" href="../pizzas/pizzas.html">Pizzas</a></li>
+												<li><a class="dropdown-item nav-link--text" href="../pizzas/pizzas.html">Pizzas</a></li>
 												<li><hr class="dropdown-divider" /></li>
-												<li><a class="dropdown-item" href="./bebidas.html">Bebidas</a></li>
+												<li><a class="dropdown-item nav-link--text" href="./bebidas.html">Bebidas</a></li>
 											</ul>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link" href="../../../index.html#productosDestacados">Ofertas</a>
+											<a class="nav-link nav-link--text" href="../../../index.html#productosDestacados">Ofertas</a>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link" href="../../about/about.html">Nosotros</a>
+											<a class="nav-link nav-link--text" href="../../about/about.html">Nosotros</a>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link" href="../../contact/contact.html">Contacto</a>
+											<a class="nav-link nav-link--text" href="../../contact/contact.html">Contacto</a>
 										</li>
 									</ul>
 									<form class="d-flex me-2" role="search">
@@ -185,7 +187,13 @@
 
 		<main>
 			<section>
-				<video class="hamburgesaBannerMovie bebidaBannerMovieResponsive" src="../../../assets/movie/drinkBanner.mp4" autoplay muted loop></video>
+				<video
+					class="hamburgesaBannerMovie bebidaBannerMovieResponsive"
+					src="../../../assets/movie/drinkBanner.mp4"
+					autoplay
+					muted
+					loop
+				></video>
 			</section>
 			<section class="container mt-4 mb-5">
 				<h1 class="text-center text-light mt-4 mb-4">Nuestras Bebidas</h1>
@@ -263,26 +271,42 @@
 			</section>
 			<section class="container d-flex justify-content-around">
 				<div class="d-flex flex-row align-items-center">
-					<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#ffffff" class="bi bi-caret-left" viewBox="0 0 16 16">
-						<path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
-					  </svg>
-					
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="50"
+						height="50"
+						fill="#ffffff"
+						class="bi bi-caret-left"
+						viewBox="0 0 16 16"
+					>
+						<path
+							d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"
+						/>
+					</svg>
+
 					<div>
-					  <div class="little-dot  little-dot--first"></div>
-					  <div class="little-dot">
-						<div class="big-dot-container">
-						  <div class="big-dot"></div>
+						<div class="little-dot little-dot--first"></div>
+						<div class="little-dot">
+							<div class="big-dot-container">
+								<div class="big-dot"></div>
+							</div>
 						</div>
-					  </div>
-					  <div class="little-dot  little-dot--last"></div>
+						<div class="little-dot little-dot--last"></div>
 					</div>
-					
-					<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#ffffff" class="bi bi-caret-right" viewBox="0 0 16 16">
-						<path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
-					  </svg>
-				  </div>
-			 
-				
+
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="50"
+						height="50"
+						fill="#ffffff"
+						class="bi bi-caret-right"
+						viewBox="0 0 16 16"
+					>
+						<path
+							d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"
+						/>
+					</svg>
+				</div>
 			</section>
 			<section class="container mt-5 d-flex flex-column align-items-center mb-3">
 				<h2 class="text-center text-warning">Nuestros Ingredientes</h2>
