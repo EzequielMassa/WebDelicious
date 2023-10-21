@@ -54,6 +54,7 @@ header,
 
 .nav-link--text {
 	color: var(--font-color-primary);
+	font-size: 1.1rem;
 }
 
 .form-control:focus {
@@ -64,7 +65,7 @@ header,
 .navbar__search__icon,
 .navbar__cart__icon {
 	color: var(--font-color-primary);
-	font-size: 1.5rem;
+	font-size: 1.8rem;
 }
 
 .navbar__cart__item {
