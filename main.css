@@ -146,6 +146,14 @@ header,
 	background-color: var(--color-background);
 	border: var(--color-primary) solid;
 }
+
+.product__card__description {
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
 .grid-gallery {
 	display: grid;
 	grid-auto-rows: 200px;
