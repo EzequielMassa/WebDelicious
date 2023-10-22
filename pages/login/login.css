@@ -5,9 +5,15 @@
 	--font-color-secondary: #7b7b7b;
 	--font-principal: 'Montserrat', sans-serif;
 	--font-secundaria: 'Nunito Sans', sans-serif;
-	--font-size-title: 4rem;
-	--font-size-subtitle: 2.5rem;
-	--font-size-parrafo: 1.5rem;
+	--font-size-title: 2rem;
+	--font-size-title-tablet: 2.5rem;
+	--font-size-title-desktop: 3rem;
+	--font-size-subtitle: 1.5rem;
+	--font-size-subtitle-tablet: 2rem;
+	--font-size-subtitle-desktop: 2.5rem;
+	--font-size-parrafo: 1rem;
+	--font-size-parrafo-tablet: 1.15rem;
+	--font-size-parrafo-desktop: 1.25rem;
 	--font-size-bottom: 1.2rem;
 }
 #login {
@@ -81,11 +87,11 @@ input:invalid{
 	background-color: var(--color-primary);
 	}
 	*/
-	.registrate_login{
-		color: var(--color-primary);
-		font-size: 17px;
-	}
-	.recuperaContraseña_login{
-		color: var(--color-primary);
-		font-size: 17px;
-	}
+.registrate_login {
+	color: var(--color-primary);
+	font-size: 17px;
+}
+.recuperaContraseña_login {
+	color: var(--color-primary);
+	font-size: 17px;
+}
