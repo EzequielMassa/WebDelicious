@@ -16,16 +16,20 @@
 	--font-size-parrafo-desktop: 1.25rem;
 	--font-size-bottom: 1.2rem;
 }
+
 #login {
 	background-color: var(--color-primary);
 }
+
 #inicioS {
 	background-color: var(--color-background);
 	border: #ffc851;
 }
+
 body {
 	background-color: var(--color-background);
 }
+
 html {
 	scroll-behavior: smooth;
 	font-family: var(--font-principal);
@@ -43,6 +47,7 @@ html {
 .navbar__logo {
 	width: 5rem;
 }
+
 .navbar__search__icon {
 	color: rgb(255, 255, 255);
 	font-size: 1.5rem;
@@ -58,15 +63,18 @@ html {
 	background-color: var(--color-background);
 	background-repeat: no-repeat;
 }
+
 .btn__InicioSesion {
 	background: var(--color-primary);
 	width: 150px;
 	height: 50px;
 	text-align: center;
 }
+
 .btn__InicioSesion:hover {
 	background: var(--font-color-secondary);
 }
+
 .navbar__search__icon:hover,
 .nav-link:hover,
 .navbar__cart__icon:hover {
@@ -79,6 +87,7 @@ html {
 	padding-top: 0.15rem;
 	padding-bottom: 0.15rem;
 }
+
 /*
 input:invalid{
 	background-color: rgb(219, 101, 101);
@@ -91,6 +100,7 @@ input:invalid{
 	color: var(--color-primary);
 	font-size: 17px;
 }
+
 .recuperaContraseña_login {
 	color: var(--color-primary);
 	font-size: 17px;
