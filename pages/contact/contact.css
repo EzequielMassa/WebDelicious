@@ -12,20 +12,6 @@
 	opacity: 0.9;
 }
 
-.contact__title {
-	font-family: var(--font-principal);
-	color: var(--color-primary);
-	font-size: 1.5rem;
-	font-weight: 700;
-}
-
-.contact__subtitle {
-	font-family: var(--font-principal);
-	color: var(--font-color-secondary);
-	font-size: 1rem;
-	font-weight: 300;
-}
-
 .form-label,
 .contact__textarea__mensaje {
 	color: var(--color-primary);
@@ -63,13 +49,6 @@ form div .form-control {
 }
 
 @media screen and (min-width: 768px) {
-	.contact__title {
-		font-size: var(--font-size-title);
-	}
-	.contact__subtitle {
-		font-size: var(--font-size-subtitle);
-	}
-
 	.form-label,
 	.contact__textarea__mensaje {
 		font-size: 1.2rem;
