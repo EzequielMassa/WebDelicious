@@ -121,10 +121,7 @@ input:invalid{
 		font-size: var(--font-size-subtitle-tablet);
 	}
 
-	.btn__InicioSesion:hover {
-		background: var(--font-color-secondary);
-		color: var(--font-color-primary);
-	}
+
 }
 
 @media all and (min-width: 300px) {
@@ -136,10 +133,7 @@ input:invalid{
 	.subtitle {
 		font-size: var(--font-size-subtitle-tablet);
 	}
-	.btn__InicioSesion:hover {
-		background: var(--font-color-secondary);
-		color: var(--font-color-primary);
-	}
+	
 
 
 }
@@ -152,9 +146,6 @@ input:invalid{
 	.subtitle {
 		font-size: var(--font-size-subtitle-desktop);
 	}
-	.btn__InicioSesion:hover {
-		background: var(--font-color-secondary);
-		color: var(--font-color-primary);
-	}
+	
 	
 }
