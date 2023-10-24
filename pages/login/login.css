@@ -73,6 +73,7 @@ html {
 
 .btn__InicioSesion:hover {
 	background: var(--font-color-secondary);
+	
 }
 
 .navbar__search__icon:hover,
@@ -104,4 +105,44 @@ input:invalid{
 .recuperaContraseña_login {
 	color: var(--color-primary);
 	font-size: 17px;
+}
+.title {
+	color: var(--color-primary);
+	font-family: var(--font-principal);
+	font-size: var(--font-size-title);
+}
+@media all and (min-width: 768px) {
+
+
+	.title {
+		font-size: var(--font-size-title-tablet);
+	}
+	.subtitle {
+		font-size: var(--font-size-subtitle-tablet);
+	}
+
+}
+
+@media all and (min-width: 200px) {
+
+
+	.title {
+		font-size: var(--font-size-parrafo);
+	}
+	.subtitle {
+		font-size: var(--font-size-subtitle-tablet);
+	}
+
+
+}
+@media all and (min-width: 1024px) {
+	
+
+	.title {
+		font-size: var(--font-size-title-desktop);
+	}
+	.subtitle {
+		font-size: var(--font-size-subtitle-desktop);
+	}
+	
 }
