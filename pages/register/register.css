@@ -69,3 +69,41 @@ html {
 	color: var(--color-background);
 	transition: all 0.5s ease-in-out;
 }
+@media all and (min-width: 768px) {
+
+
+	.title {
+		font-size: var(--font-size-title-tablet);
+	}
+	.subtitle {
+		font-size: var(--font-size-subtitle-tablet);
+	}
+
+
+}
+
+@media all and (min-width: 300px) {
+
+
+	.title {
+		font-size: var(--font-size-parrafo);
+	}
+	.subtitle {
+		font-size: var(--font-size-subtitle-tablet);
+	}
+	
+
+
+}
+@media all and (min-width: 1024px) {
+	
+
+	.title {
+		font-size: var(--font-size-title-desktop);
+	}
+	.subtitle {
+		font-size: var(--font-size-subtitle-desktop);
+	}
+	
+	
+}
