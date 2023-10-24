@@ -154,28 +154,29 @@
 								type="name"
 								placeholder="Ingrese su domicilio"
 								minlength="10"
-								maxlength="200"
+								maxlength="40"
 								title="Es obligario que ingreses tu domicilio"
 								required
 							/>
 							<label class="fs-4 text-white" for="Postal">Codigo postal</label>
 							<input
 								class="form-control me-3 text-center"
-								type="name"
+								type="text"
 								placeholder="Ingrese su codigo postal"
-								minlength="6"
-								maxlength="10"
+								minlength="3"
+								maxlength="6"
 								title="Es obligario que ingreses tu codigo postal"
 								required
 							/>
 							<label class="fs-4 text-white" for="">Telefono</label>
 							<input
 								class="form-control me-3 text-center"
-								type="tel"
+								type="number"
 								placeholder="Ingrese su número de telefono"
-								minlength="10"
-								maxlength="14"
+								minlength="7"
+								maxlength="13"
 								title="Es obligatorio que ingreses tu numero de telefono"
+								pattern="[0-9]"
 								required
 							/>
 							<label class="fs-4 text-white" for="Usuario">Email</label>
@@ -194,7 +195,9 @@
 								type="password"
 								placeholder="Ingresa tu nueva contraseña"
 								minlength="2"
+								maxlength="20"
 								title="Es obligario que ingreses tu nueva contraseña"
+								pattern=".{8,}" title="8 o más caracteres"
 								required
 							/>
 

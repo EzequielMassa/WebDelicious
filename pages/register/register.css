@@ -79,7 +79,7 @@ html {
 		font-size: var(--font-size-subtitle-tablet);
 	}
 
-
+	
 }
 
 @media all and (min-width: 300px) {
@@ -92,6 +92,7 @@ html {
 		font-size: var(--font-size-subtitle-tablet);
 	}
 	
+
 
 
 }
