@@ -31,4 +31,15 @@
 	
 }
 
+.img_detalle_producto{
 
+	width: 250px;
+}
+
+@media screen and (max-width: 767px) {
+	.img_detalle_producto {
+	  width: 200px;
+	}
+	
+  }
+  
