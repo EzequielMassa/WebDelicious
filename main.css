@@ -292,29 +292,11 @@ background-color: green;
 	}
 }
 
-@keyframes slide-right {
-	from {
-		transform: translateX(-150%);
-	}
-	to {
-		transform: translateX(0);
-	}
-}
-
 .scrollFadeAnimation {
 	view-timeline-name: --scrollFade;
 	view-timeline-axis: block;
 	animation-timeline: --scrollFade;
 	animation-name: show;
-	animation-range: entry 10% cover 50%;
-	animation-fill-mode: both;
-}
-
-.scrollSlideAnimation {
-	view-timeline-name: --scrollSlide;
-	view-timeline-axis: block;
-	animation-timeline: --scrollSlide;
-	animation-name: slide-right;
 	animation-range: entry 10% cover 50%;
 	animation-fill-mode: both;
 }
