@@ -1,7 +1,7 @@
 .contact {
 	background-image: linear-gradient(black, black), url('../../assets/img/contact-background.webp');
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center;
 	background-attachment: fixed;
 	background-size: cover;
 	background-blend-mode: saturation;
