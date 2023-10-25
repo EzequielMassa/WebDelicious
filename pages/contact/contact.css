@@ -7,6 +7,10 @@
 }
 
 .contact__container {
+	border-radius: 15px;
+}
+
+.contact__container {
 	background-color: var(--color-background);
 	opacity: 0.9;
 }
