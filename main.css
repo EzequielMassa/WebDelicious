@@ -63,6 +63,11 @@ header,
 	font-size: 1.1rem;
 }
 
+.dropdown-item:active {
+	background-color: #e0b047;
+	color: #121618;
+}
+
 .form-control:focus {
 	border-color: var(--color-primary);
 	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 200, 81, 0.6);
@@ -112,11 +117,6 @@ header,
 	transition: all 0.5s ease-in-out;
 }
 
-.dropdown-item:active {
-	background-color: #e0b047;
-	color: #121618;
-}
-
 .modal__cart__image {
 	max-width: 80%;
 	min-width: 3.5rem;
@@ -152,11 +152,46 @@ header,
 	border: var(--color-primary) solid;
 }
 
-.product__card__description {
+.card__product__description {
 	display: -webkit-box;
 	-webkit-line-clamp: 3;
 	-webkit-box-orient: vertical;
 	overflow: hidden;
+}
+
+.categoria__container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.categoria__img {
+	height: 10rem;
+	object-fit: cover;
+	object-position: center center;
+	transition: all 1s ease-in-out;
+}
+
+.categoria__btn {
+	width: 100%;
+	visibility: hidden;
+	font-family: var(--font-principal);
+	font-weight: 700;
+	transition: all 0.2s ease-in-out;
+}
+
+.categoria__container:hover .categoria__btn {
+	visibility: visible;
+	display: inline-block;
+	background-color: rgba(255, 200, 81, 0.8);
+	transition: all 1s ease-in-out;
+}
+
+.categoria__container:hover img {
+	height: 15rem;
+	filter: grayscale(100%);
+	transition: all 1s ease-in-out;
 }
 
 .grid-gallery {
@@ -229,48 +264,35 @@ header,
 	transition: 2s;
 }
 
-.categoria__container {
+.slider-review {
+	height: auto;
+	margin: 0;
+	overflow: hidden;
 	position: relative;
+	width: auto;
+}
+
+.slide-track-review {
+	overflow: hidden;
+	animation: scroll-review 60s linear infinite;
+	white-space: wrap;
 	display: flex;
-	flex-direction: column;
-	align-items: center;
+	flex-direction: row;
+	width: calc(17vw * 40);
+}
+.slide-track-review:hover {
+	animation-play-state: paused;
+	cursor: pointer;
 }
 
-.categoria__img {
-	height: 10rem;
-	object-fit: cover;
-	object-position: center center;
-	transition: all 1s ease-in-out;
+.scrollFadeAnimation {
+	view-timeline-name: --scrollFade;
+	view-timeline-axis: block;
+	animation-timeline: --scrollFade;
+	animation-name: show;
+	animation-range: entry 10% cover 50%;
+	animation-fill-mode: both;
 }
-
-.categoria__btn {
-	width: 100%;
-	visibility: hidden;
-	font-family: var(--font-principal);
-	font-weight: 700;
-	transition: all 0.2s ease-in-out;
-}
-
-.categoria__container:hover .categoria__btn {
-	visibility: visible;
-	display: inline-block;
-	background-color: rgba(255, 200, 81, 0.8);
-	transition: all 1s ease-in-out;
-}
-
-.categoria__container:hover img {
-	height: 15rem;
-	filter: grayscale(100%);
-	transition: all 1s ease-in-out;
-}
-/*
-input:invalid{
-background-color: red;
-}
-input:valid{
-background-color: green;
-}
-*/
 
 @keyframes scroll-review {
 	0% {
@@ -292,37 +314,22 @@ background-color: green;
 	}
 }
 
-.scrollFadeAnimation {
-	view-timeline-name: --scrollFade;
-	view-timeline-axis: block;
-	animation-timeline: --scrollFade;
-	animation-name: show;
-	animation-range: entry 10% cover 50%;
-	animation-fill-mode: both;
-}
-
-.slider-review {
-	height: auto;
-	margin: 0;
-	overflow: hidden;
-	position: relative;
-	width: auto;
-}
-.slide-track-review {
-	overflow: hidden;
-	animation: scroll-review 60s linear infinite;
-	white-space: wrap;
-	display: flex;
-	flex-direction: row;
-	width: calc(17vw * 40);
-}
-.slide-track-review:hover {
-	animation-play-state: paused;
-	cursor: pointer;
-}
 @media all and (min-width: 320px) {
 	.grid-gallery {
 		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.gradiendCardReview img {
+		height: 200px;
+	}
+	.cardReview {
+		width: 15rem;
+		padding: 0.1rem 0.1rem;
+	}
+	.cardReview im {
+		height: 200px;
 	}
 }
 
@@ -359,17 +366,5 @@ background-color: green;
 	}
 	.paragraph {
 		font-size: var(--font-size-parrafo-desktop);
-	}
-}
-@media screen and (max-width: 767px) {
-	.gradiendCardReview img {
-		height: 200px;
-	}
-	.cardReview {
-		width: 15rem;
-		padding: 0.1rem 0.1rem;
-	}
-	.cardReview im {
-		height: 200px;
 	}
 }
