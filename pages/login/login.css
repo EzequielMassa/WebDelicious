@@ -1,20 +1,5 @@
-:root {
-	--color-background: #121618;
-	--color-primary: #ffc851;
-	--font-color-primary: #ffffff;
-	--font-color-secondary: #7b7b7b;
-	--font-principal: 'Montserrat', sans-serif;
-	--font-secundaria: 'Nunito Sans', sans-serif;
-	--font-size-title: 2rem;
-	--font-size-title-tablet: 2.5rem;
-	--font-size-title-desktop: 3rem;
-	--font-size-subtitle: 1.5rem;
-	--font-size-subtitle-tablet: 2rem;
-	--font-size-subtitle-desktop: 2.5rem;
-	--font-size-parrafo: 1rem;
-	--font-size-parrafo-tablet: 1.15rem;
-	--font-size-parrafo-desktop: 1.25rem;
-	--font-size-bottom: 1.2rem;
+body {
+	background-color: var(--color-background);
 }
 
 #login {
@@ -24,37 +9,6 @@
 #inicioS {
 	background-color: var(--color-background);
 	border: #ffc851;
-}
-
-body {
-	background-color: var(--color-background);
-}
-
-html {
-	scroll-behavior: smooth;
-	font-family: var(--font-principal);
-}
-
-* {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	vertical-align: baseline;
-}
-
-.navbar__logo {
-	width: 5rem;
-}
-
-.navbar__search__icon {
-	color: rgb(255, 255, 255);
-	font-size: 1.5rem;
-}
-
-.navbar__cart__icon {
-	font-size: 1.5rem;
 }
 
 .bg {
@@ -76,27 +30,11 @@ html {
 	color: var(--font-color-primary);
 }
 
-.navbar__search__icon:hover,
-.nav-link:hover,
-.navbar__cart__icon:hover {
-	color: var(--color-primary);
-	transition: all 0.5s ease;
-	cursor: pointer;
-}
-
 .login__form__btn--gmail {
 	padding-top: 0.15rem;
 	padding-bottom: 0.15rem;
 }
 
-/*
-input:invalid{
-	background-color: rgb(219, 101, 101);
-	}
-	input:valid{
-	background-color: var(--color-primary);
-	}
-	*/
 .registrate_login {
 	color: var(--color-primary);
 	font-size: 17px;
@@ -109,43 +47,32 @@ input:invalid{
 .title {
 	color: var(--color-primary);
 	font-family: var(--font-principal);
-	font-size: var(--font-size-title);
+	font-size: 1.2rem;
 }
+
+@media all and (min-width: 380px) {
+	.title {
+		font-size: var(--font-size-title);
+	}
+	.subtitle {
+		font-size: var(--font-size-subtitle-tablet);
+	}
+}
+
 @media all and (min-width: 768px) {
-
-
 	.title {
 		font-size: var(--font-size-title-tablet);
 	}
 	.subtitle {
 		font-size: var(--font-size-subtitle-tablet);
 	}
-
-
 }
 
-@media all and (min-width: 300px) {
-
-
-	.title {
-		font-size: var(--font-size-parrafo);
-	}
-	.subtitle {
-		font-size: var(--font-size-subtitle-tablet);
-	}
-	
-
-
-}
 @media all and (min-width: 1024px) {
-	
-
 	.title {
 		font-size: var(--font-size-title-desktop);
 	}
 	.subtitle {
 		font-size: var(--font-size-subtitle-desktop);
 	}
-	
-	
 }
